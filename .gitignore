@@ -1,0 +1,34 @@
+# 원본·빌드 산출물 (저작물·대용량)
+*.iso
+*.gcm
+*.ciso
+*.rvz
+*.wbfs
+*.xdelta
+extract/
+build/
+out/
+*.bak
+__pycache__/
+# 배포용 패처 산출물(make_patcher.py, 릴리즈에만 첨부)
+release/
+# 동봉 실행 파일·글꼴 파일(배포하지 않음)
+tools/bin/
+tools/fonts/
+# 내부 작업 기록
+CLAUDE.md
+# 일본어 원문이 든 파일(게임 데이터, 추출 도구로 다시 만듦)
+translation/evt_texts.json
+translation/dol_texts.json
+translation/dol_texts2.json
+translation/*.xlsx
+translation/review_*.json
+translation/pilot_*.json
+translation/batches/
+translation/*_before_review.json
+translation/dol_ko2_review.md
+# work/ 는 게임에서 뽑은 그림·영상·모델과 작업용 스크립트라 통째로 빼고, 그림 위치 목록만 넣는다
+work/*
+!work/gfx_survey/
+work/gfx_survey/*
+!work/gfx_survey/index.csv

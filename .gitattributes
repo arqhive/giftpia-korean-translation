@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.xdelta binary
+*.png binary
+*.bat eol=crlf
+*.ps1 eol=crlf
+patcher/README.txt -text

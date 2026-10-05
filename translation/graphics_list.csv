@@ -1,0 +1,260 @@
+﻿n,grade,category,text,png,w,h,fmt,first_src,n_src,other_src,in_preload,status,final
+57,C,장식,E=MC² (수식),tex/chr/ejinso.dat/020_52e00_32x64_f14.png,32,64,14,chr/ejinso.dat,4,chr/ejinso0.dat;chr/ejinso10.dat;chr/ejinso18.dat,0,제외,
+76,B,간판/소품,鮭 (별 마크 아래 세로 글자),tex/chr/fisherk.dat/028_752e8_48x96_f14.png,48,96,14,chr/fisherk.dat,1,,0,확정,work/gfx/final/76.png
+111,C,로고,张 (중국 한자 장식),tex/chr/komatta.dat/007_3c940_64x64_f14.png,64,64,14,chr/komatta.dat,3,chr/komatta10.dat;chr/komatta18.dat,0,제외,
+156,B,문장,村 (원형 문장),tex/chr/mayer.dat/069_a9040_64x64_f14.png,64,64,14,chr/mayer.dat,10,chr/mayer0.dat;chr/mayer10.dat;chr/mayer18.dat;chr/mayer2.dat;chr/mayer3.dat;chr/mayer4.dat;chr/mayer5.dat;chr/mayer6.dat;chr/mayer8.dat,0,원본 유지,
+163,C,로고,EE (에진소 전기 로고),tex/chr/mc_tenjin.dat/000_3efa8_32x32_f5.png,32,32,5,chr/mc_tenjin.dat,1,,0,제외,
+173,C,로고,EJINSO / EE / ELECTRIC,tex/chr/mc_tenjin.dat/064_417a8_64x64_f14.png,64,64,14,chr/mc_tenjin.dat,1,,0,제외,
+250,C,로고,EE 로고(로봇 몸통),tex/chr/robo_b.dat/016_70cf8_64x32_f14.png,64,32,14,chr/robo_b.dat,16,chr/robo_b0.dat;chr/robo_b10.dat;chr/robo_b17.dat;chr/robo_b18.dat;chr/robo_b3.dat;chr/robo_b5.dat;chr/robo_b6.dat;chr/robo_c.dat;chr/robo_c0.dat;chr/robo_c10.dat;chr/robo_c17.dat;chr/robo_c18.dat;chr,0,제외,
+251,B,소품,お茶,tex/chr/robo_b.dat/020_70f78_32x32_f14.png,32,32,14,chr/robo_b.dat,40,chr/robo_b0.dat;chr/robo_b10.dat;chr/robo_b17.dat;chr/robo_b18.dat;chr/robo_b3.dat;chr/robo_b5.dat;chr/robo_b6.dat;chr/robo_c.dat;chr/robo_c0.dat;chr/robo_c10.dat;chr/robo_c17.dat;chr/robo_c18.dat;chr,0,확정,work/gfx/final/251.png
+258,B,소품,茶 (원형 마크),tex/chr/robo_c.dat/027_71d08_32x32_f14.png,32,32,14,chr/robo_c.dat,8,chr/robo_c0.dat;chr/robo_c10.dat;chr/robo_c17.dat;chr/robo_c18.dat;chr/robo_c3.dat;chr/robo_c5.dat;chr/robo_c6.dat,0,제외,
+261,C,로고,EE 로고,tex/chr/robo_d.dat/016_717f0_64x32_f14.png,64,32,14,chr/robo_d.dat,8,chr/robo_d0.dat;chr/robo_d10.dat;chr/robo_d17.dat;chr/robo_d18.dat;chr/robo_d3.dat;chr/robo_d5.dat;chr/robo_d6.dat,0,제외,
+262,C,로고,ua? (판독 불확실),tex/chr/robo_d.dat/027_71ed0_32x32_f14.png,32,32,14,chr/robo_d.dat,8,chr/robo_d0.dat;chr/robo_d10.dat;chr/robo_d17.dat;chr/robo_d18.dat;chr/robo_d3.dat;chr/robo_d5.dat;chr/robo_d6.dat,0,제외,
+266,C,로고,EE 로고,tex/chr/robo_j.dat/016_70c28_64x32_f14.png,64,32,14,chr/robo_j.dat,8,chr/robo_j0.dat;chr/robo_j10.dat;chr/robo_j17.dat;chr/robo_j18.dat;chr/robo_j3.dat;chr/robo_j5.dat;chr/robo_j6.dat,0,제외,
+267,C,로고,EE 로고(좌우 반전),tex/chr/robo_j.dat/027_71308_32x32_f14.png,32,32,14,chr/robo_j.dat,8,chr/robo_j0.dat;chr/robo_j10.dat;chr/robo_j17.dat;chr/robo_j18.dat;chr/robo_j3.dat;chr/robo_j5.dat;chr/robo_j6.dat,0,제외,
+272,C,로고,EE 로고,tex/chr/robo_m.dat/016_713e0_64x32_f14.png,64,32,14,chr/robo_m.dat,8,chr/robo_m0.dat;chr/robo_m10.dat;chr/robo_m17.dat;chr/robo_m18.dat;chr/robo_m3.dat;chr/robo_m5.dat;chr/robo_m6.dat,0,제외,
+273,C,로고,영문 반전 글자(판독 불확실),tex/chr/robo_m.dat/027_71ac0_32x32_f14.png,32,32,14,chr/robo_m.dat,8,chr/robo_m0.dat;chr/robo_m10.dat;chr/robo_m17.dat;chr/robo_m18.dat;chr/robo_m3.dat;chr/robo_m5.dat;chr/robo_m6.dat,0,제외,
+274,C,로고,NPD,tex/chr/robo_m.dat/028_71b60_32x32_f14.png,32,32,14,chr/robo_m.dat,8,chr/robo_m0.dat;chr/robo_m10.dat;chr/robo_m17.dat;chr/robo_m18.dat;chr/robo_m3.dat;chr/robo_m5.dat;chr/robo_m6.dat,0,제외,
+284,C,로고,영문 명판(판독 불확실),tex/chr/rumiko.dat/021_e8254_32x16_f14.png,32,16,14,chr/rumiko.dat,14,chr/rumiko0.dat;chr/rumiko10.dat;chr/rumiko11.dat;chr/rumiko15.dat;chr/rumiko16.dat;chr/rumiko18.dat;chr/rumiko2.dat;chr/rumiko3.dat;chr/rumiko4.dat;chr/rumiko5.dat;chr/rumiko6.dat;chr/rumiko8.dat;chr,0,제외,
+305,C,소품,"사진/신문 조각 ""001""",tex/chr/sp.dat/033_39840_64x32_f14.png,64,32,14,chr/sp.dat,5,chr/sp10.dat;chr/sp18.dat;map/worldmap/sp_bag.dat,1,제외,
+414,A,잡지,プレミアム 1月号,tex/map/ann/table.dat/004_206c_64x64_f6.png,64,64,6,map/ann/table.dat,1,,0,확정,work/gfx/final/414.png
+415,C,잡지,For All Turntablists / Best Buy Guide 2002 / MAY.02,tex/map/ann/table.dat/005_210c_64x64_f14.png,64,64,14,map/ann/table.dat,1,,0,제외,
+422,A,TV 화면,恐怖!! へび女,tex/map/ann/tv.dat/008_1aa0_64x64_f6.png,64,64,6,map/ann/tv.dat,1,,0,확정,work/gfx/final/422.png
+427,A,TV 화면,デスネ〜・カンパニー,tex/map/ann/tv.dat/014_1e60_64x16_f6.png,64,16,6,map/ann/tv.dat,3,map/motelroom/tv.dat,1,확정,work/gfx/final/427.png
+430,C,포스터,Love Story,tex/map/ann/wall.dat/002_1544_256x128_f14.png,256,128,14,map/ann/wall.dat,1,,0,제외,
+456,C,벽걸이,Port of Nanashi(작은 영문),tex/map/apron/kabekake1.dat/004_9bc_32x64_f5.png,32,64,5,map/apron/kabekake1.dat,1,,0,제외,
+457,C,벽걸이,Matroos?(작은 영문),tex/map/apron/kabekake2.dat/002_78c_32x64_f5.png,32,64,5,map/apron/kabekake2.dat,1,,0,제외,
+472,C,간판,nanashi BEER,tex/map/bar/beer.dat/005_e9c_64x64_f14.png,64,64,14,map/bar/beer.dat,1,,0,제외,
+477,C,간판,Toilet,tex/map/bar/door.dat/001_2a4_64x32_f14.png,64,32,14,map/bar/door.dat,1,,0,제외,
+478,C,게임판,START / GOAL / 1~5 (개구리 경주판),tex/map/bar/frograce_board.dat/000_138_256x128_f14.png,256,128,14,map/bar/frograce_board.dat,1,,0,제외,
+484,C,기계,Juke BOX / A B C D / 1 2 3 4,tex/map/bar/jukebox.dat/009_1300_128x128_f6.png,128,128,6,map/bar/jukebox.dat,1,,0,제외,
+493,C,매트,welcome,tex/map/bar/map.dat/001_5e0_64x64_f6.png,64,64,6,map/bar/map.dat,1,,0,제외,
+508,C,술병,"WILD NANASHI, Tenjin SYOCHU 등 라벨",tex/map/bar/wall.dat/009_15a4_128x64_f5.png,128,64,5,map/bar/wall.dat,1,,0,제외,
+509,C,술병,"OLD CHAR, JOHN WALKER?, CHAO GLEN? 라벨",tex/map/bar/wall.dat/010_1644_128x64_f5.png,128,64,5,map/bar/wall.dat,1,,0,제외,
+511,C,포스터,BAR OSUMESU,tex/map/bar/wall.dat/015_1964_128x128_f6.png,128,128,6,map/bar/wall.dat,1,,0,제외,
+512,C,포스터,Let's Happy date / 7/16 / BAR OSUMESU,tex/map/bar/wall.dat/016_1a04_64x64_f5.png,64,64,5,map/bar/wall.dat,1,,0,제외,
+513,C,포스터,18/20 / BAR OSUMESU,tex/map/bar/wall.dat/017_1aa4_128x128_f14.png,128,128,14,map/bar/wall.dat,1,,0,제외,
+514,C,포스터,JAZZ / SKIP / BAR OSUMESU,tex/map/bar/wall.dat/018_1b44_64x64_f14.png,64,64,14,map/bar/wall.dat,1,,0,제외,
+515,C,로고,Music Waves?(장식 영문),tex/map/bar/wall.dat/019_1be4_128x64_f5.png,128,64,5,map/bar/wall.dat,1,,0,제외,
+516,C,포스터,Happy,tex/map/bar/wall.dat/020_1c84_128x128_f5.png,128,128,5,map/bar/wall.dat,1,,0,제외,
+517,C,포스터,The island which I love,tex/map/bar/wall.dat/021_1d24_128x128_f5.png,128,128,5,map/bar/wall.dat,1,,0,제외,
+549,C,포스터,DEE 로고,tex/map/bartoilet/wall.dat/192_99dc_128x128_f6.png,128,128,6,map/bartoilet/wall.dat,1,,0,제외,
+550,C,포스터,JAZZ / Special guest SKIP / BAR OSUMESU,tex/map/bartoilet/wall.dat/193_9a7c_128x128_f14.png,128,128,14,map/bartoilet/wall.dat,1,,0,제외,
+553,C,포스터,STRANGE 등 장식 영문(미로형),tex/map/bartoilet/wall.dat/197_9cfc_128x128_f14.png,128,128,14,map/bartoilet/wall.dat,1,,0,제외,
+554,C,포스터,STRANGE 등 장식 영문(미로형),tex/map/bartoilet/wall.dat/198_9d9c_128x128_f14.png,128,128,14,map/bartoilet/wall.dat,1,,0,제외,
+555,C,포스터,Let's Happy date / 7/16 / BAR OSUMESU,tex/map/bartoilet/wall.dat/199_9e3c_64x64_f5.png,64,64,5,map/bartoilet/wall.dat,1,,0,제외,
+556,C,로고,Music Waves?(장식 영문),tex/map/bartoilet/wall.dat/200_9edc_128x64_f5.png,128,64,5,map/bartoilet/wall.dat,1,,0,제외,
+568,A,안내문,ナナシ島 宝くじ / ―規則― + 작은 글 5줄(판독 불가),tex/map/convini/lottery_txt.dat/009_2194_64x64_f14.png,64,64,14,map/convini/lottery_txt.dat,1,,0,확정,work/gfx/final/568.png
+569,A,간판,宝くじ,tex/map/convini/lottery_txt.dat/010_2234_64x48_f14.png,64,48,14,map/convini/lottery_txt.dat,1,,0,확정,work/gfx/final/569.png
+571,A,매트,いらっしゃいませ,tex/map/convini/mat.dat/000_80_128x64_f14.png,128,64,14,map/convini/mat.dat,1,,0,확정,work/gfx/final/571.png
+574,C,간판,Welcome,tex/map/convini/register.dat/001_b74_64x32_f14.png,64,32,14,map/convini/register.dat,1,,0,제외,
+588,A,책자,島のしおり ×2,tex/map/convini/stand.dat/007_13e8_128x64_f14.png,128,64,14,map/convini/stand.dat,1,,0,확정,work/gfx/final/588.png
+590,A,가격표,入荷待ち,tex/map/convini/tagu.dat/000_a8_64x32_f14.png,64,32,14,map/convini/tagu.dat,1,,0,확정,work/gfx/final/590.png
+601,C,로고,N-mart,tex/map/convinisouko/case.dat/002_1f4_64x64_f14.png,64,64,14,map/convinisouko/case.dat,2,map/convinisouko/rocker.dat,0,제외,
+605,C,로고,N-mart,tex/map/convinisouko/pracase.dat/002_1f0_128x64_f5.png,128,64,5,map/convinisouko/pracase.dat,1,,0,제외,
+607,B,메모,사물함 메모 3장(작아서 판독 불가),tex/map/convinisouko/rocker.dat/001_125c_64x128_f14.png,64,128,14,map/convinisouko/rocker.dat,1,,0,제외,
+608,B,명판/메모,ルミコ (명판) + 메모 今週の目標…(작음),tex/map/convinisouko/rocker.dat/003_139c_128x256_f14.png,128,256,14,map/convinisouko/rocker.dat,1,,0,확정,work/gfx/final/608.png
+617,C,낙서,무의미 영문자 나열(fyuuyuulu…),tex/map/convinisouko/wall.dat/004_c5c_64x64_f5.png,64,64,5,map/convinisouko/wall.dat,1,,0,제외,
+634,C,로고,DEE 로고,tex/map/dj/booth.dat/029_4be4_128x128_f14.png,128,128,14,map/dj/booth.dat,1,,0,제외,
+635,A,간판,"マモナガメ?(붉은 가타카나, 판독 불확실)",tex/map/dj/booth.dat/030_4c84_128x32_f14.png,128,32,14,map/dj/booth.dat,1,,0,제외,
+639,C,로고,DEE 로고,tex/map/dj/case.dat/001_204_64x64_f14.png,64,64,14,map/dj/case.dat,1,,0,제외,
+646,C,잡지,MIXTURE 2002 EXCLUSIVE!… / Hikarin Played in IBIZA / For All Turntablists… (잡지 표지 4장),tex/map/dj/map.dat/001_620_128x128_f14.png,128,128,14,map/dj/map.dat,1,,0,제외,
+652,C,로고,FUNKY 77 UP?(장식 영문),tex/map/dj/wall.dat/006_1784_128x128_f5.png,128,128,5,map/dj/wall.dat,1,,0,제외,
+681,A,편지,손글씨 편지 7줄 + さようなら (스토리 소품),tex/map/grandba/letter.dat/000_70_128x128_f6.png,128,128,6,map/grandba/letter.dat,2,,1,확정,work/gfx/final/681.png
+699,B,소품,防 (방재 두건 마크),tex/map/grandba/zukin.dat/000_c74_64x64_f14.png,64,64,14,map/grandba/zukin.dat,3,ext/item.dat,1,제외,
+840,C,로고,EE 작은 로고,tex/map/labo/mac_01.dat/000_5f0_128x128_f6.png,128,128,6,map/labo/mac_01.dat,1,,0,제외,
+846,A,경고문,キケン注意!,tex/map/labo/map.dat/002_2b4_64x16_f6.png,64,16,6,map/labo/map.dat,1,,0,확정,work/gfx/final/846.png
+855,C,로고,EJINSO / EE / ELECTRIC,tex/map/labo/mecha_ten.dat/030_2f9c_64x64_f14.png,64,64,14,map/labo/mecha_ten.dat,2,map/labo2/tenjin.dat,0,제외,
+945,C,문장,M (메이어 문 위 글자),tex/map/mayerentrance/wall.dat/004_940_64x128_f14.png,64,128,14,map/mayerentrance/wall.dat,1,,0,제외,
+1017,B,소품,"쓰레기봉투 초록 글자(흐림, 판독 불가)",tex/map/met/garbage_bag.dat/000_860_32x32_f4.png,32,32,4,map/met/garbage_bag.dat,1,,0,제외,
+1024,A,신문,ゴールイン / 結婚 + 기사(작음),tex/map/met/newspaper2.dat/000_300_256x128_f14.png,256,128,14,map/met/newspaper2.dat,1,,0,확정,work/gfx/final/1024.png
+1027,B,족자,"세로 한자 족자(흐림, 판독 불가)",tex/map/met/otokomae.dat/005_744_16x32_f6.png,16,32,6,map/met/otokomae.dat,1,,0,제외,
+1031,A,신문,"큰 제목 한자 4자(흐림, 판독 불확실)",tex/map/met/s_newspaper.dat/000_240_32x32_f4.png,32,32,4,map/met/s_newspaper.dat,1,,0,확정,work/gfx/final/1031.png
+1041,A,경고문,ヘルメット着用忘れずに,tex/map/met/wall.dat/028_277c_32x64_f14.png,32,64,14,map/met/wall.dat,1,,0,확정,work/gfx/final/1041.png
+1043,A,게시판,工程表,tex/map/met/wall.dat/031_295c_128x64_f14.png,128,64,14,map/met/wall.dat,1,,0,확정,work/gfx/final/1043.png
+1045,A,표지,親,tex/map/met/yajirusi.dat/001_40c_64x64_f6.png,64,64,6,map/met/yajirusi.dat,1,,0,확정,work/gfx/final/1045.png
+1089,C,층 표시,2F / 1F,tex/map/motelentrance/wallup.dat/003_e1c_256x256_f5.png,256,256,5,map/motelentrance/wallup.dat,1,,0,제외,
+1090,B,액자,"게시물(흐림, 판독 불가)",tex/map/motelentrance/wallup.dat/004_ee8_32x32_f14.png,32,32,14,map/motelentrance/wallup.dat,1,,0,제외,
+1091,B,액자,"게시물(흐림, 판독 불가)",tex/map/motelentrance/wallup.dat/005_f88_32x32_f14.png,32,32,14,map/motelentrance/wallup.dat,1,,0,제외,
+1092,C,포스터,NANASHI cookies / coconut flavor,tex/map/motelentrance/wallup.dat/006_1028_64x64_f14.png,64,64,14,map/motelentrance/wallup.dat,1,,0,제외,
+1093,A,책자,島のしおり ×3,tex/map/motelentrance/wallup.dat/007_10c8_128x64_f14.png,128,64,14,map/motelentrance/wallup.dat,1,,0,확정,work/gfx/final/1093.png
+1101,C,로고,EE 작은 로고(선풍기),tex/map/motelroom/fan_a.dat/000_2764_128x64_f14.png,128,64,14,map/motelroom/fan_a.dat,2,,1,제외,
+1112,A,TV 화면,恐怖!! へび女 (motelroom판),tex/map/motelroom/tv.dat/011_f10_64x64_f14.png,64,64,14,map/motelroom/tv.dat,2,,1,확정,work/gfx/final/1112.png
+1123,D,번호판,201,tex/map/motelrouka/plate201.dat/000_dc_32x32_f14.png,32,32,14,map/motelrouka/plate201.dat,1,,0,제외,
+1124,D,번호판,202,tex/map/motelrouka/plate202.dat/000_cc_32x32_f14.png,32,32,14,map/motelrouka/plate202.dat,1,,0,제외,
+1125,D,번호판,301,tex/map/motelrouka/plate301.dat/000_dc_32x32_f14.png,32,32,14,map/motelrouka/plate301.dat,1,,0,제외,
+1126,D,번호판,302,tex/map/motelrouka/plate302.dat/000_cc_32x32_f14.png,32,32,14,map/motelrouka/plate302.dat,1,,0,제외,
+1156,C,로고,Record?(작은 영문),tex/map/nanashi_fm/booth_box.dat/000_a8_32x64_f14.png,32,64,14,map/nanashi_fm/booth_box.dat,2,,1,제외,
+1160,C,장식,세로 영문(작음),tex/map/nanashi_fm/booth_dj.dat/000_19d8_128x64_f14.png,128,64,14,map/nanashi_fm/booth_dj.dat,2,,1,제외,
+1166,A,문 표지,オンエア中は 静かに…(작은 일본어 2줄),tex/map/nanashi_fm/lobby_door.dat/000_e0_64x128_f14.png,64,128,14,map/nanashi_fm/lobby_door.dat,1,,0,제외,
+1169,C,로고,NANASHI FM 83.1,tex/map/nanashi_fm/lobby_mat.dat/000_48_64x32_f14.png,64,32,14,map/nanashi_fm/lobby_mat.dat,1,,0,제외,
+1170,C,표지등,ON AIR,tex/map/nanashi_fm/lobby_rump.dat/000_1f0_64x32_f14.png,64,32,14,map/nanashi_fm/lobby_rump.dat,1,,0,제외,
+1174,C,포스터,Ohayo! NANASHI! + 상단 띠 글자,tex/map/nanashi_fm/lobby_wall.dat/012_1270_64x64_f6.png,64,64,6,map/nanashi_fm/lobby_wall.dat,1,,0,제외,
+1175,C,포스터,FROM 20:00 / DEE …,tex/map/nanashi_fm/lobby_wall.dat/013_1310_64x64_f6.png,64,64,6,map/nanashi_fm/lobby_wall.dat,1,,0,제외,
+1176,B,게시물,"벽보(흐림, 판독 불가)",tex/map/nanashi_fm/lobby_wall.dat/014_13b0_32x32_f14.png,32,32,14,map/nanashi_fm/lobby_wall.dat,1,,0,제외,
+1177,C,포스터,… NANASHI FM,tex/map/nanashi_fm/lobby_wall.dat/015_147c_64x32_f14.png,64,32,14,map/nanashi_fm/lobby_wall.dat,1,,0,제외,
+1181,C,기계,POWER,tex/map/nanashi_fm/mixr_machine_l.dat/000_3a4_128x128_f14.png,128,128,14,map/nanashi_fm/mixr_machine_l.dat,1,,0,제외,
+1182,C,기계,FREQUENCY / 83.1 MHz,tex/map/nanashi_fm/mixr_machine_r.dat/000_3a4_128x128_f14.png,128,128,14,map/nanashi_fm/mixr_machine_r.dat,1,,0,제외,
+1274,A,UI형 표지,コンプリートまで あと,tex/map/peevee/counter_base.dat/000_1c0_256x128_f6.png,256,128,6,map/peevee/counter_base.dat,1,,0,제외,
+1283,D,숫자,"0~9 숫자 10장(peevee/number.dat, 이 칸은 9)",tex/map/peevee/number.dat/000_1b0_32x32_f6.png,32,32,6,map/peevee/number.dat,1,,0,제외,
+1338,C,포스터,Miss NANASHI,tex/map/pokkle/posta.dat/000_68_128x128_f14.png,128,128,14,map/pokkle/posta.dat,2,,1,제외,
+1340,C,로고,CooL,tex/map/pokkle/reizouko.dat/001_1770_64x64_f14.png,64,64,14,map/pokkle/reizouko.dat,1,,0,제외,
+1346,C,장식,stop?(작은 영문),tex/map/pokkle/reizouko.dat/010_1d3c_64x32_f14.png,64,32,14,map/pokkle/reizouko.dat,1,,0,제외,
+1375,A,잡지,ジャモニカ学習帳 (ジャポニカ 패러디),tex/map/pokkle/zassi.dat/000_a8_64x64_f14.png,64,64,14,map/pokkle/zassi.dat,1,,0,확정,work/gfx/final/1375.png
+1378,A,경고문,足下注意,tex/map/ropeway/wall.dat/000_960_32x64_f6.png,32,64,6,map/ropeway/wall.dat,1,,0,확정,work/gfx/final/1378.png
+1379,A,현수막,ようこそナナシロープウェイへ,tex/map/ropeway/wall.dat/001_a00_256x32_f6.png,256,32,6,map/ropeway/wall.dat,1,,0,확정,work/gfx/final/1379.png
+1412,C,로고,EE 로고(상자),tex/map/toudai/box.dat/000_268_128x128_f6.png,128,128,6,map/toudai/box.dat,1,,0,제외,
+1413,C,경고문,ATTENTION! + EE + 작은 글,tex/map/toudai/breaker.dat/000_280_64x64_f6.png,64,64,6,map/toudai/breaker.dat,1,,0,제외,
+1471,A,ATM,通帳 / 現金出口 / キャッシュカード (작은 글),tex/map/tyoushaentrance/atm.dat/001_1180_128x64_f14.png,128,64,14,map/tyoushaentrance/atm.dat,2,,1,제외,
+1475,C,ATM,The Bank Of Nanashi,tex/map/tyoushaentrance/atm.dat/005_1400_128x64_f14.png,128,64,14,map/tyoushaentrance/atm.dat,2,,1,제외,
+1476,C,간판,ATM,tex/map/tyoushaentrance/atm.dat/007_1540_64x32_f5.png,64,32,5,map/tyoushaentrance/atm.dat,2,,1,제외,
+1477,C,간판,ATM(꺼짐),tex/map/tyoushaentrance/atm.dat/009_1680_64x32_f5.png,64,32,5,map/tyoushaentrance/atm.dat,2,,1,제외,
+1486,C,간판,Reception,tex/map/tyoushaentrance/counter.dat/000_730_256x128_f14.png,256,128,14,map/tyoushaentrance/counter.dat,1,,0,제외,
+1496,C,자판기,ITEM,tex/map/tyoushaentrance/jihan.dat/001_1a88_128x256_f5.png,128,256,5,map/tyoushaentrance/jihan.dat,1,,0,제외,
+1504,A,포스터,1等 おめでとう,tex/map/tyoushaentrance/kairou3f.dat/002_208_128x64_f14.png,128,64,14,map/tyoushaentrance/kairou3f.dat,1,,0,확정,work/gfx/final/1504.png
+1505,A,포스터,2等 おめでとう,tex/map/tyoushaentrance/kairou3f.dat/003_2a8_128x64_f14.png,128,64,14,map/tyoushaentrance/kairou3f.dat,1,,0,확정,work/gfx/final/1505.png
+1506,A,포스터,3等 おめでとう,tex/map/tyoushaentrance/kairou3f.dat/004_348_128x64_f14.png,128,64,14,map/tyoushaentrance/kairou3f.dat,1,,0,확정,work/gfx/final/1506.png
+1510,C,포스터,STOP!,tex/map/tyoushaentrance/pop_pmashr.dat/000_70_64x64_f14.png,64,64,14,map/tyoushaentrance/pop_pmashr.dat,1,,0,제외,
+1511,C,포스터,Violator Pokkle,tex/map/tyoushaentrance/pop_pviolater.dat/000_70_64x64_f14.png,64,64,14,map/tyoushaentrance/pop_pviolater.dat,1,,0,제외,
+1517,A,책자,島のしおり,tex/map/tyoushaentrance/shelf.dat/008_bb0_64x64_f14.png,64,64,14,map/tyoushaentrance/shelf.dat,1,,0,원본 유지,
+1518,A,책자,島のしおり,tex/map/tyoushaentrance/shelf.dat/009_c50_64x64_f14.png,64,64,14,map/tyoushaentrance/shelf.dat,1,,0,원본 유지,
+1519,A,책자,島のしおり,tex/map/tyoushaentrance/shelf.dat/010_cf0_64x64_f14.png,64,64,14,map/tyoushaentrance/shelf.dat,1,,0,원본 유지,
+1520,A,책자,村庁舎だより,tex/map/tyoushaentrance/shelf.dat/011_d90_64x64_f14.png,64,64,14,map/tyoushaentrance/shelf.dat,1,,0,확정,work/gfx/final/1520.png
+1521,C,책자,The Nanashi-kun,tex/map/tyoushaentrance/shelf.dat/012_e30_64x64_f14.png,64,64,14,map/tyoushaentrance/shelf.dat,1,,0,제외,
+1522,A,책자,村の声,tex/map/tyoushaentrance/shelf.dat/014_f70_64x64_f14.png,64,64,14,map/tyoushaentrance/shelf.dat,1,,0,확정,work/gfx/final/1522.png
+1530,A,포스터,キ?ク 罰金 (첫 줄 판독 불확실),tex/map/tyoushaentrance/teach.dat/000_70_64x64_f14.png,64,64,14,map/tyoushaentrance/teach.dat,1,,0,확정,work/gfx/final/1530.png
+1544,A,방 이름판,村長室 / 資料室 / 展望台,tex/map/tyoushaentrance/wall.dat/019_340c_64x96_f14.png,64,96,14,map/tyoushaentrance/wall.dat,1,,0,확정,work/gfx/final/1544.png
+1545,A,도감(책),ナナシ島の植物図鑑 + 식물 이름 8개·설명(작음),tex/map/tyoushalibrary/book_chrono.dat/000_44c_256x384_f14.png,256,384,14,map/tyoushalibrary/book_chrono.dat,1,,0,확정,work/gfx/final/1545.png
+1546,A,도감(책),ナナシ島のさかな図鑑 + 물고기 이름 약 20개·설명(작음),tex/map/tyoushalibrary/book_fish.dat/000_45c_512x384_f14.png,512,384,14,map/tyoushalibrary/book_fish.dat,1,,0,확정,work/gfx/final/1546.png
+1547,A,도감(책),ナナシ島のキノコ図鑑 + 버섯 이름 9개(ただの/みどり/みずいろ/真っ赤な/藍色/きいろ/むらさき/オレンジ/虹色キノコ)·설명,tex/map/tyoushalibrary/book_mashr.dat/000_44c_256x384_f14.png,256,384,14,map/tyoushalibrary/book_mashr.dat,1,,0,확정,work/gfx/final/1547.png
+1556,A,책장 표지,資料1,tex/map/tyoushalibrary/book_shelf_1.dat/016_1a80_32x16_f14.png,32,16,14,map/tyoushalibrary/book_shelf_1.dat,1,,0,확정,work/gfx/final/1556.png
+1559,A,책장 표지,資料2,tex/map/tyoushalibrary/book_shelf_2.dat/016_1a80_32x16_f14.png,32,16,14,map/tyoushalibrary/book_shelf_2.dat,1,,0,확정,work/gfx/final/1559.png
+1560,A,책장 표지,資料3,tex/map/tyoushalibrary/book_shelf_3.dat/016_1a80_32x16_f14.png,32,16,14,map/tyoushalibrary/book_shelf_3.dat,1,,0,확정,work/gfx/final/1560.png
+1561,A,책장 표지,資料4,tex/map/tyoushalibrary/book_shelf_4.dat/016_1a98_32x16_f14.png,32,16,14,map/tyoushalibrary/book_shelf_4.dat,1,,0,확정,work/gfx/final/1561.png
+1562,A,책장 표지,資料5,tex/map/tyoushalibrary/book_shelf_5.dat/016_1aa8_32x16_f14.png,32,16,14,map/tyoushalibrary/book_shelf_5.dat,1,,0,확정,work/gfx/final/1562.png
+1563,A,책장 표지,資料6,tex/map/tyoushalibrary/book_shelf_6.dat/016_1a98_32x16_f14.png,32,16,14,map/tyoushalibrary/book_shelf_6.dat,1,,0,확정,work/gfx/final/1563.png
+1564,B,도감(책),텐진 고문서풍 손글씨 + 그림(작음),tex/map/tyoushalibrary/book_tenjin.dat/000_44c_256x384_f14.png,256,384,14,map/tyoushalibrary/book_tenjin.dat,2,,1,원본 유지,
+1569,A,표지,禁煙,tex/map/tyoushalibrary/picture.dat/000_80_32x32_f4.png,32,32,4,map/tyoushalibrary/picture.dat,1,,0,확정,work/gfx/final/1569.png
+1593,D,UI 버튼,A / B 버튼 그림,tex/map/tyoushaobservatory/floor_rail.dat/000_30_256x384_f6.png,256,384,6,map/tyoushaobservatory/floor_rail.dat,1,,0,제외,
+1670,A,간판,ロープウェイ のりば + 세로 족자(작음),tex/map/worldmap/Shumoto_home.dat/000_1478_128x128_f14.png,128,128,14,map/worldmap/Shumoto_home.dat,2,,1,확정,work/gfx/final/1670.png
+1676,A,낙서,"メイヤー様の…勝っ!! (손글씨 낙서, 판독 불확실)",tex/map/worldmap/Shumoto_noriba.dat/007_2664_64x32_f5.png,64,32,5,map/worldmap/Shumoto_noriba.dat,2,,1,확정,work/gfx/final/1676.png
+1678,A,간판,ロープウェイ のりば + 세로 족자(작음),tex/map/worldmap/Syama_home.dat/000_1498_128x128_f14.png,128,128,14,map/worldmap/Syama_home.dat,2,,1,확정,work/gfx/final/1678.png
+1686,A,간판,おいでやす テンジンランドへ,tex/map/worldmap/Tland_base.dat/010_41e4_128x64_f6.png,128,64,6,map/worldmap/Tland_base.dat,2,,1,확정,work/gfx/final/1686.png
+1689,A,현수막,손글씨 가타카나(テンジン…? 판독 불확실),tex/map/worldmap/Tland_nuno.dat/000_754_256x256_f14.png,256,256,14,map/worldmap/Tland_nuno.dat,2,,1,원본 유지,
+1692,A,현수막,(村役場公認) ポックルくんの大人式,tex/map/worldmap/adult3.dat/000_70_128x32_f5.png,128,32,5,map/worldmap/adult3.dat,2,,1,확정,work/gfx/final/1692.png
+1754,C,문장,S 문장(창문 장식),tex/map/worldmap/an_home.dat/015_1ce8_128x64_f14.png,128,64,14,map/worldmap/an_home.dat,2,,1,제외,
+1763,C,명판,Anne,tex/map/worldmap/an_plate.dat/000_1964_64x32_f14.png,64,32,14,map/worldmap/an_plate.dat,2,,1,제외,
+1770,C,간판,세로 영문 간판(Bakeshop?),tex/map/worldmap/apron_2f.dat/000_a90_256x256_f14.png,256,256,14,map/worldmap/apron_2f.dat,2,,1,제외,
+1772,C,로고,PePZi,tex/map/worldmap/apron_counter.dat/000_7dc_128x64_f5.png,128,64,5,map/worldmap/apron_counter.dat,2,,1,제외,
+1782,C,메뉴,sutamina! / carrot! / dry curry! / nashigoren!,tex/map/worldmap/apron_home.dat/009_85f0_128x96_f14.png,128,96,14,map/worldmap/apron_home.dat,2,,1,제외,
+1788,C,라벨,PEPPER?(흐림),tex/map/worldmap/apron_home.dat/017_8af0_32x32_f6.png,32,32,6,map/worldmap/apron_home.dat,2,,1,제외,
+1794,C,간판,close,tex/map/worldmap/apron_kanban.dat/001_dd8_64x32_f14.png,64,32,14,map/worldmap/apron_kanban.dat,2,,1,제외,
+1795,C,문패,손글씨 영문(판독 불가),tex/map/worldmap/apron_kichendoor.dat/000_90_64x64_f14.png,64,64,14,map/worldmap/apron_kichendoor.dat,1,,0,제외,
+1807,A,간판,BAR オスメス ×2,tex/map/worldmap/bar_home.dat/009_2cd0_128x128_f14.png,128,128,14,map/worldmap/bar_home.dat,2,,1,원본 유지,
+1824,B,깃발,茶。,tex/map/worldmap/chaya_home.dat/000_c7c_128x128_f14.png,128,128,14,map/worldmap/chaya_home.dat,2,,1,확정,work/gfx/final/1824.png
+1828,B,양산,茶。,tex/map/worldmap/chaya_kasa.dat/000_2c4_66x65_f14.png,66,65,14,map/worldmap/chaya_kasa.dat,2,,1,확정,work/gfx/final/1828.png
+1831,C,문,N-mart / 17:00-21:00,tex/map/worldmap/convini_door.dat/000_88_64x64_f14.png,64,64,14,map/worldmap/convini_door.dat,2,,1,제외,
+1834,C,간판,N-mart(세로),tex/map/worldmap/convini_home.dat/003_20d0_64x64_f14.png,64,64,14,map/worldmap/convini_home.dat,2,,1,제외,
+1844,A,포스터,キーパーソン? / ゴミひろい,tex/map/worldmap/convini_home.dat/018_2a5c_128x64_f14.png,128,64,14,map/worldmap/convini_home.dat,2,,1,확정,work/gfx/final/1844.png
+1849,C,간판,N-mart,tex/map/worldmap/convini_tower.dat/003_a60_64x64_f14.png,64,64,14,map/worldmap/convini_tower.dat,2,,1,제외,
+1855,C,로고,DEE 로고,tex/map/worldmap/dj_komono.dat/008_137c_32x31_f6.png,32,31,6,map/worldmap/dj_komono.dat,2,,1,제외,
+1856,C,로고,DEE 로고,tex/map/worldmap/dj_plate.dat/000_998_128x32_f14.png,128,32,14,map/worldmap/dj_plate.dat,2,,1,제외,
+1860,C,간판,EE / LABORATORY OF EJINSO ELECTRONICS,tex/map/worldmap/ejinso_home.dat/003_160c_64x64_f5.png,64,64,5,map/worldmap/ejinso_home.dat,2,,1,제외,
+1862,C,간판,EE / LABORATORY OF EJINSO ELECTRONICS(작음),tex/map/worldmap/ejinso_kanban.dat/000_120_64x188_f14.png,64,188,14,map/worldmap/ejinso_kanban.dat,2,,1,제외,
+1871,A,기계,取出口 + EE,tex/map/worldmap/f_machine.dat/000_15bc_64x64_f14.png,64,64,14,map/worldmap/f_machine.dat,2,,1,확정,work/gfx/final/1871.png
+1875,A,기계,準備中 + PHOTO FIGURE / Insert PHOTO,tex/map/worldmap/f_machine.dat/009_1b88_256x128_f14.png,256,128,14,map/worldmap/f_machine.dat,2,,1,확정,work/gfx/final/1875.png
+1890,A,안내판,「ナナシ島の…」について + 본문(작음) + 名所発見!,tex/map/worldmap/fishoksign.dat/000_3c8_128x128_f14.png,128,128,14,map/worldmap/fishoksign.dat,4,map/worldmap2/nanashisign.dat,1,확정,work/gfx/final/1890.png
+1891,A,안내판,「いろいろな魚」+ 본문(작음) + 釣り場,tex/map/worldmap/fishoksign.dat/001_468_128x128_f14.png,128,128,14,map/worldmap/fishoksign.dat,2,,1,확정,work/gfx/final/1891.png
+1892,A,표지,釣り禁止,tex/map/worldmap/fishsign.dat/000_6ac_32x64_f14.png,32,64,14,map/worldmap/fishsign.dat,2,,1,제외,
+1904,D,숫자,1 2 3 6 (꽃시계 숫자),tex/map/worldmap/flowerclock.dat/006_1ec4_64x32_f5.png,64,32,5,map/worldmap/flowerclock.dat,2,,1,제외,
+1910,C,간판,83.1 NANASHI FM,tex/map/worldmap/fm_dj.dat/000_1f50_128x128_f14.png,128,128,14,map/worldmap/fm_dj.dat,2,,1,제외,
+1913,C,간판,NANASHI FM(세로),tex/map/worldmap/fm_home.dat/000_dbc_64x128_f14.png,64,128,14,map/worldmap/fm_home.dat,2,,1,제외,
+1917,A,낙서,タオにかまれて 勝った!!,tex/map/worldmap/fm_tower.dat/001_24d8_32x64_f5.png,32,64,5,map/worldmap/fm_tower.dat,2,,1,확정,work/gfx/final/1917.png
+1934,B,표지,"작은 글(흐림, 판독 불가)",tex/map/worldmap/hanahuda.dat/000_1dc_32x16_f14.png,32,16,14,map/worldmap/hanahuda.dat,2,,1,제외,
+1935,B,표지,한자 1자(畑?),tex/map/worldmap/hatakesign.dat/000_788_64x64_f14.png,64,64,14,map/worldmap/hatakesign.dat,2,,1,제외,
+1936,B,안내판,본문 작은 글(판독 불가),tex/map/worldmap/hatakesign.dat/001_828_128x64_f14.png,128,64,14,map/worldmap/hatakesign.dat,2,,1,제외,
+1947,C,자판기,ITEM,tex/map/worldmap/jihan.dat/000_19fc_64x128_f14.png,64,128,14,map/worldmap/jihan.dat,2,,1,제외,
+1969,C,현수막,영문 장식 + 세로 일본어 쪽지(작음),tex/map/worldmap/king_home.dat/002_6180_64x64_f14.png,64,64,14,map/worldmap/king_home.dat,2,,1,제외,
+1972,C,간판,I LOVE …,tex/map/worldmap/king_home.dat/017_6ae0_32x32_f14.png,32,32,14,map/worldmap/king_home.dat,2,,1,제외,
+1978,C,간판,Salmon?(작음),tex/map/worldmap/king_home.dat/049_7ee0_64x16_f14.png,64,16,14,map/worldmap/king_home.dat,2,,1,제외,
+1979,B,현수막,작은 글(판독 불가),tex/map/worldmap/king_home.dat/052_80c0_64x16_f14.png,64,16,14,map/worldmap/king_home.dat,2,,1,제외,
+1982,B,표지,"공사 표지 글자(흐림, 판독 불가)",tex/map/worldmap/koujisign.dat/000_590_32x16_f14.png,32,16,14,map/worldmap/koujisign.dat,2,,1,제외,
+1983,C,로고,"EE(반전, 복권 기계)",tex/map/worldmap/lottery.dat/000_2090_128x128_f14.png,128,128,14,map/worldmap/lottery.dat,2,,1,제외,
+1984,D,숫자,7세그먼트 숫자 0~9,tex/map/worldmap/lottery.dat/010_26d0_64x192_f14.png,64,192,14,map/worldmap/lottery.dat,6,map/worldmap/lotteryude1.dat;map/worldmap/lotteryude2.dat,1,제외,
+1985,A,현수막,発売中! ナナシ島宝くじ,tex/map/worldmap/lottery_P.dat/000_f0_128x32_f6.png,128,32,6,map/worldmap/lottery_P.dat,2,,1,확정,work/gfx/final/1985.png
+1986,A,표지,あと5日 / あと4日 / あと3日 / あと2日 / 明日発表 / 今日発表,tex/map/worldmap/lottery_P.dat/001_190_128x32_f14.png,128,32,14,map/worldmap/lottery_P.dat,2,,1,확정,work/gfx/final/1986.png
+1987,C,로고,EE(반전),tex/map/worldmap/lotteryude1.dat/000_1084_169x128_f14.png,169,128,14,map/worldmap/lotteryude1.dat,4,map/worldmap/lotteryude2.dat,1,제외,
+1989,C,간판,POLICE,tex/map/worldmap/m2_banban.dat/000_12d8_128x96_f6.png,128,96,6,map/worldmap/m2_banban.dat,2,,1,제외,
+1990,C,로고,EE,tex/map/worldmap/m2_banban.dat/001_1378_64x64_f14.png,64,64,14,map/worldmap/m2_banban.dat,2,,1,제외,
+1991,C,로고,EE,tex/map/worldmap/m2_banban.dat/002_1418_64x32_f14.png,64,32,14,map/worldmap/m2_banban.dat,2,,1,제외,
+1992,C,표시,- BAT +,tex/map/worldmap/m2_banban.dat/003_14b8_64x32_f14.png,64,32,14,map/worldmap/m2_banban.dat,2,,1,제외,
+2032,A,문패,メイヤー + M,tex/map/worldmap/mayer_kakoi.dat/000_900_128x64_f14.png,128,64,14,map/worldmap/mayer_kakoi.dat,4,map/worldmap/mayer_post.dat,1,확정,work/gfx/final/2032.png
+2040,A,간판,メット,tex/map/worldmap/met_drum.dat/003_8d4_64x32_f14.png,64,32,14,map/worldmap/met_drum.dat,2,,1,확정,work/gfx/final/2040.png
+2043,A,간판,メット(세로),tex/map/worldmap/met_gaitou.dat/004_840_35x100_f14.png,35,100,14,map/worldmap/met_gaitou.dat,2,,1,확정,work/gfx/final/2043.png
+2050,A,현수막,安全第一,tex/map/worldmap/met_home.dat/008_1c2c_128x32_f14.png,128,32,14,map/worldmap/met_home.dat,2,,1,확정,work/gfx/final/2050.png
+2059,A,낙서,"세로 손글씨 낙서(…!!, 판독 불확실)",tex/map/worldmap/met_steel.dat/001_78c_32x64_f5.png,32,64,5,map/worldmap/met_steel.dat,2,,1,확정,work/gfx/final/2059.png
+2060,C,각인,R M (나무 각인),tex/map/worldmap/mettree.dat/000_2f38_128x128_f5.png,128,128,5,map/worldmap/mettree.dat,2,,1,제외,
+2061,A,표지,水くみ場 ←,tex/map/worldmap/mizukumi.dat/000_1a4_32x128_f14.png,32,128,14,map/worldmap/mizukumi.dat,2,,1,확정,work/gfx/final/2061.png
+2078,A,표지,立入禁止,tex/map/worldmap/noenter.dat/000_670_32x64_f14.png,32,64,14,map/worldmap/noenter.dat,4,map/worldmap/stopsign.dat,1,제외,
+2081,A,현수막,ナナシ島・村役場公認 ポックルくんの大人式,tex/map/worldmap/otonashiki.dat/001_fa4_128x32_f14.png,128,32,14,map/worldmap/otonashiki.dat,2,,1,확정,work/gfx/final/2081.png
+2086,C,장식,ナ esn W?(판독 불확실),tex/map/worldmap/parter_home.dat/001_3490_64x32_f5.png,64,32,5,map/worldmap/parter_home.dat,2,,1,제외,
+2099,A,문패,ポックル,tex/map/worldmap/pokkle_door.dat/000_b4_64x64_f14.png,64,64,14,map/worldmap/pokkle_door.dat,2,,1,확정,work/gfx/final/2099.png
+2113,D,기호,〒 (우체통),tex/map/worldmap/pokkle_post.dat/000_128_32x32_f14.png,32,32,14,map/worldmap/pokkle_post.dat,2,,1,제외,
+2115,C,간판,GUARD,tex/map/worldmap/policebox.dat/000_ebc_64x128_f14.png,64,128,14,map/worldmap/policebox.dat,2,,1,제외,
+2138,A,간판,巡回中,tex/map/worldmap/rusukanban.dat/000_c28_64x32_f14.png,64,32,14,map/worldmap/rusukanban.dat,2,,1,확정,work/gfx/final/2138.png
+2146,C,장식,张 (배 장식),tex/map/worldmap/ship.dat/012_7160_64x64_f14.png,64,64,14,map/worldmap/ship.dat,2,,1,제외,
+2154,A,이정표,ナナシ観光,tex/map/worldmap/signpost_an.dat/000_448_64x32_f14.png,64,32,14,map/worldmap/signpost_an.dat,2,,1,확정,work/gfx/final/2154.png
+2155,A,이정표,シマウラ入口,tex/map/worldmap/simasign.dat/000_c0_64x32_f14.png,64,32,14,map/worldmap/simasign.dat,2,,1,확정,work/gfx/final/2155.png
+2165,A,문패,タオ,tex/map/worldmap/tao_home.dat/010_32f0_64x32_f14.png,64,32,14,map/worldmap/tao_home.dat,2,,1,확정,work/gfx/final/2165.png
+2172,A,계약서,契約書 ~Contract~ / テンジンのマーチャンダイジングに関する権利はすべてデスネーに帰属します / 財団法人デスネーカンパニー 理事長 コマッタ・チャン殿,tex/map/worldmap/tenjin_contract.dat/000_28_128x128_f14.png,128,128,14,map/worldmap/tenjin_contract.dat,2,,1,확정,work/gfx/final/2172.png
+2173,A,계약서,契約書 ~Contract~ (2172와 같음 + ポックル 서명),tex/map/worldmap/tenjin_contract.dat/001_c8_128x128_f14.png,128,128,14,map/worldmap/tenjin_contract.dat,2,,1,확정,work/gfx/final/2173.png
+2176,A,매표기,きっぷ販売機 / NANASHI ROPEWAY / こども / おとな,tex/map/worldmap/ticket.dat/000_180_128x128_f14.png,128,128,14,map/worldmap/ticket.dat,2,,1,확정,work/gfx/final/2176.png
+2188,C,기차,No.1(작음),tex/map/worldmap/train.dat/000_e18_256x128_f14.png,256,128,14,map/worldmap/train.dat,2,,1,제외,
+2189,A,쓰레기통,ビューティフル・ナナシ?(작음),tex/map/worldmap/trash.dat/000_a78_64x64_f14.png,64,64,14,map/worldmap/trash.dat,2,,1,원본 유지,
+2223,A,낙서,"세로 손글씨 낙서(…勝っ!!, 판독 불확실)",tex/map/worldmap/turibashi_ki.dat/001_804_32x64_f5.png,32,64,5,map/worldmap/turibashi_ki.dat,2,,1,확정,work/gfx/final/2223.png
+2239,A,현수막,島内クリーンアップ週間 + 작은 부제,tex/map/worldmap/tyousha_home.dat/012_5890_32x128_f5.png,32,128,5,map/worldmap/tyousha_home.dat,2,,1,확정,work/gfx/final/2239.png
+2240,A,현수막,正しい躾?はみんなのマナー + ナナシ島村役場(작음),tex/map/worldmap/tyousha_home.dat/013_5930_32x128_f5.png,32,128,5,map/worldmap/tyousha_home.dat,2,,1,확정,work/gfx/final/2240.png
+2274,A,안내판,「ナナシ島の…」について + 본문(작음) + ヨノハテ,tex/map/worldmap/yonohatesign.dat/000_3c8_128x128_f14.png,128,128,14,map/worldmap/yonohatesign.dat,2,,1,확정,work/gfx/final/2274.png
+2281,A,깃발,茶 / ◀コチラ,tex/map/worldmap2/chaya_nobori.dat/009_a10_48x128_f14.png,48,128,14,map/worldmap2/chaya_nobori.dat,2,,1,확정,work/gfx/final/2281.png
+2283,A,깃발,染めます / ◀コチラ,tex/map/worldmap2/chaya_nobori2.dat/009_a10_48x128_f14.png,48,128,14,map/worldmap2/chaya_nobori2.dat,2,,1,확정,work/gfx/final/2283.png
+2290,A,안내판,본문(작음) + 花畑,tex/map/worldmap2/hanasign.dat/000_3c8_128x128_f14.png,128,128,14,map/worldmap2/hanasign.dat,2,,1,확정,work/gfx/final/2290.png
+2291,A,안내판,この物件はナナシ島の…管理です…(세로 작은 글),tex/map/worldmap2/hutsign.dat/000_3b0_64x128_f14.png,64,128,14,map/worldmap2/hutsign.dat,2,,1,제외,
+2320,A,경고문,さる注意,tex/map/worldmap2/monkeysign.dat/000_5d0_64x128_f14.png,64,128,14,map/worldmap2/monkeysign.dat,2,,1,확정,work/gfx/final/2320.png
+2322,A,경고문,ヤンキー出没?注意,tex/map/worldmap2/racesign.dat/000_5d0_64x128_f14.png,64,128,14,map/worldmap2/racesign.dat,2,,1,확정,work/gfx/final/2322.png
+2377,A,UI 탭,さいきん (밝음),tex/ext/etc.tpl/022_108x32_f14.png,108,32,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2377.png
+2378,A,UI 탭,たべもの (밝음),tex/ext/etc.tpl/023_108x32_f14.png,108,32,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2378.png
+2379,A,UI 탭,つかうもの (밝음),tex/ext/etc.tpl/024_108x32_f14.png,108,32,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2379.png
+2380,A,UI 탭,そのほか (밝음),tex/ext/etc.tpl/025_108x32_f14.png,108,32,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2380.png
+2381,A,UI 탭,ネガイ玉 (밝음),tex/ext/etc.tpl/026_108x32_f14.png,108,32,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2381.png
+2382,A,UI 탭,しゃしん (밝음),tex/ext/etc.tpl/027_108x32_f14.png,108,32,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2382.png
+2383,A,UI 탭,さいきん (어두움),tex/ext/etc.tpl/028_91x25_f14.png,91,25,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2383.png
+2384,A,UI 탭,たべもの (어두움),tex/ext/etc.tpl/029_91x25_f14.png,91,25,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2384.png
+2385,A,UI 탭,つかうもの (어두움),tex/ext/etc.tpl/030_91x25_f14.png,91,25,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2385.png
+2386,A,UI 탭,そのほか (어두움),tex/ext/etc.tpl/031_91x25_f14.png,91,25,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2386.png
+2387,A,UI 탭,ネガイ玉 (어두움),tex/ext/etc.tpl/032_91x25_f14.png,91,25,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2387.png
+2388,A,UI 탭,しゃしん (어두움),tex/ext/etc.tpl/033_91x25_f14.png,91,25,14,ext/etc.tpl,1,,0,확정,work/gfx/final/2388.png
+2389,C,UI,EE 로고(etc.tpl),tex/ext/etc.tpl/034_32x32_f14.png,32,32,14,ext/etc.tpl,1,,0,제외,
+2396,D,UI 숫자,1 / 2 / 3 (etc.tpl 40~42),tex/ext/etc.tpl/041_16x25_f14.png,16,25,14,ext/etc.tpl,1,,0,제외,
+2442,C,아이템 아이콘,작은 영문(Cup?),tex/ext/item.dat/203_5de10_16x16_f14.png,16,16,14,ext/item.dat,1,,0,제외,
+2444,C,아이템 아이콘,N 로고,tex/ext/item.dat/205_5e4f8_16x16_f14.png,16,16,14,ext/item.dat,1,,0,제외,
+2455,A,아이템 아이콘,"キッチン?(분홍 가타카나, 16px급)",tex/ext/item.dat/226_7a0e0_32x32_f14.png,32,32,14,ext/item.dat,1,,0,확정,work/gfx/final/2455.png
+2457,A,아이템 아이콘,バイト 募集,tex/ext/item.dat/245_7e148_32x32_f14.png,32,32,14,ext/item.dat,1,,0,확정,work/gfx/final/2457.png
+2475,C,아이템 아이콘,EE 로고,tex/ext/item.dat/291_8cf08_16x16_f14.png,16,16,14,ext/item.dat,1,,0,제외,
+2481,C,아이템 아이콘,글자형 무늬(판독 불확실),tex/ext/item.dat/299_8f9e8_16x16_f14.png,16,16,14,ext/item.dat,1,,0,제외,
+2513,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/000_478x137_f6.png,478,137,6,ext/title.tpl,1,,0,확정,work/gfx/final/2513.png
+2514,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/001_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,제외,
+2515,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/002_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,제외,
+2516,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/003_32x32_f14.png,32,32,14,ext/title.tpl,1,,0,제외,
+2517,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/004_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2517.png
+2518,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/005_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2518.png
+2519,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/006_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2519.png
+2520,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/007_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2520.png
+2521,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/008_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2521.png
+2522,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/009_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2522.png
+2523,A,타이틀 로고,GIFTPIA 로고 + ギフトピア (애니메이션 단계),tex/ext/title.tpl/010_478x137_f14.png,478,137,14,ext/title.tpl,1,,0,확정,work/gfx/final/2523.png
+X1,A,3D 글자 모델,ゲームオーバー (게임 오버),model_text/haraheri_endtxt.png,,,,map/worldmap/haraheri_endtxt.dat,1,,,확정,work/model/haraheri_endtxt.dat
+X2,A,3D 글자 모델,おわり？ (끝?),model_text/dmy_endtxt.png,,,,map/worldmap/dmy_endtxt.dat,1,,,확정,work/model/dmy_endtxt.dat
+X3,A,영상 자막,오프닝 자막 카드 12장,thp/op_caps.jpg,,,,mov/opening.thp,1,,,확정,work/movie/opening.thp
+X4,-,디스크 배너,GIFTPIA 로고 + 문자열,banner/opening_bnr_4x.png,,,,opening.bnr,1,,,제외,
+X5,-,영상 크레딧,스태프롤,thp/staff_names1.jpg,,,,mov/staff.thp,1,,,제외,
+X6,-,영상 크레딧,엔딩 크레딧,thp/ending_names1.jpg,,,,mov/ending.thp,1,,,제외,

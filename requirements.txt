@@ -1,0 +1,5 @@
+numpy
+Pillow
+fonttools
+scipy
+capstone
