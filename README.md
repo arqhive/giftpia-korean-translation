@@ -78,7 +78,7 @@ python tools/dol_missing.py && python tools/dol_missing_final.py   # 1차에서 
 python tools/model_ko.py && python tools/movie_ko.py build         # 3D 글자 모델·오프닝 영상 자막
 python tools/build.py build/Giftpia_KO.iso v0.1          # 대사·폰트·실행 파일·그림 → ISO
 python tools/make_patcher.py --orig "Giftpia (Japan).iso" --build build/Giftpia_KO.iso \
-    --out release/Giftpia-KO-v0.1 --version 0.1 --bin tools/bin --readme patcher/README.txt
+    --out release/GGFJ_KPatch_v0.1 --version 0.1 --bin tools/bin --readme patcher/README.txt
 ```
 
 - 대사는 맵마다 하나인 `evt/*.evt` 바이트코드 안에 들어 있습니다. 파일 전체를 재배치하는 대신, 원래 대사 자리를 「파일 끝의 한글 대사로 건너뛰는 명령」으로 바꾸는 우회 방식으로 넣습니다(`tools/evt_patch.py`).

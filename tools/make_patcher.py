@@ -10,7 +10,7 @@
 
 사용:
   python tools/make_patcher.py --orig "Giftpia (Japan).iso" --build build/Giftpia_KO_v0.1.2.iso \\
-      --out release/Giftpia-KO-v0.1 --version 0.1 --bin <wit·xdelta3 폴더> --readme patcher/README.txt
+      --out release/GGFJ_KPatch_v0.1 --version 0.1 --bin <wit·xdelta3 폴더> --readme patcher/README.txt
 """
 import argparse
 import hashlib
