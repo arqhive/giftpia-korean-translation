@@ -153,7 +153,10 @@ def build_fonts(W, ONE):
             skipped.append(ch); continue
         if ch.strip():
             nfb += not has_glyph(FONT, ch)
-            px = draw_hinted(ch, h['cellW'], 22, 4)
+            # 중심을 1px 올려(cy=11) 잉크를 1~22번째 줄 안에 둔다. 판에서 칸이 위아래로 붙어 있어 맨 끝 줄에 잉크가 있으면
+            # 게임이 칸 경계를 섞어 읽을 때 아래 칸 글자 머리 위에 선으로 묻어남(10/12 사용자 제보, 원래 폰트는 2~20줄만 씀)
+            px = draw_hinted(ch, h['cellW'], 22, 4, cy=11)
+            px[0] = [0] * h['cellW']; px[-1] = [0] * h['cellW']        # 그래도 끝 줄에 걸치는 옅은 점(꽂·륙·흙, 1/3 농도 1~2칸)은 지움
         else:
             px = [[0] * h['cellW'] for _ in range(h['cellH'])]
         iplfont.set_cell(h, d, idx, px)
@@ -169,7 +172,7 @@ def build_fonts(W, ONE):
     for code, ch in one.items():
         i, base = (0, 0x8240) if code < 0x8340 else (1, 0x8340)
         r, c = divmod(code - base, 16)
-        px = draw_hinted(ch, 28, 22, 4, cx=14, cy=14) if ch.strip() else [[0] * 28 for _ in range(28)]
+        px = draw_hinted(ch, 28, 22, 4, cx=14, cy=13) if ch.strip() else [[0] * 28 for _ in range(28)]   # ROM 글자와 같은 높이(1px 올림)
         cellim = Image.new('L', (28, 28))
         cellim.putdata([v * 85 for row in px for v in row])
         imgs[i].paste(cellim, (c * 28, r * 28))
@@ -268,14 +271,32 @@ def build_gfx(W):
     log('그림 %d장 → %d곳(파일 %d개), 3D 글자 모델 2개' % (len(conf), len(rows), len(files)))
 
 
+def build_banner(W):
+    """디스크 배너 그림(opening.bnr 0x20, 96x32 RGB5A3) 교체. work/gfx/final/banner.png 가 있을 때만(GPT 재작업 B01).
+    배너 문자열(제목·설명)은 본체·Dolphin 이 SJIS 로 읽어서 한글을 넣을 수 없어 그대로 둔다."""
+    from PIL import Image
+    src = os.path.join(ROOT, 'work', 'gfx', 'final', 'banner.png')
+    if not os.path.exists(src):
+        return None
+    b = bytearray(open(os.path.join(EXT, 'opening.bnr'), 'rb').read())
+    img = Image.open(src).convert('RGBA'); assert img.size == (96, 32), img.size
+    enc = texenc.encode(img, 5); assert len(enc) == 0x1800
+    b[0x20:0x20 + 0x1800] = enc
+    out = os.path.join(W, 'opening.bnr'); open(out, 'wb').write(b)
+    log('디스크 배너 그림 교체')
+    return out
+
+
 def build_iso(W, out_iso):
     py = sys.executable
+    bnr = build_banner(W)
     subprocess.check_call([py, os.path.join(T, 'u8.py'), 'build', os.path.join(EXT, 'giftpia.dat'),
                            os.path.join(W, 'giftpia.dat'), os.path.join(W, 'dat')])
     subprocess.check_call([py, os.path.join(T, 'build_iso.py'), os.path.join(ROOT, 'Giftpia (Japan).iso'), out_iso,
                            '--rep', 'default.dol=' + os.path.join(W, 'main.dol'),
                            'giftpia.dat=' + os.path.join(W, 'giftpia.dat'),
                            'gift/mov/opening.thp=' + os.path.join(ROOT, 'work', 'movie', 'opening.thp'),
+                           *(['opening.bnr=' + bnr] if bnr else []),
                            '--add', 'kofont.szs=' + os.path.join(W, 'kofont.szs')])
 
 
