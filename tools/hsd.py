@@ -153,15 +153,21 @@ if __name__ == '__main__':
 
 # ---------------------------------------------------------------- 쓰기(글자 모델 교체)
 
-def glyph_mesh(ch, font, px=120):
+def glyph_mesh(ch, font, px=120, mask=None):
     """글자 하나를 px 높이로 그려 줄마다 칠해진 구간을 사각형으로 만들고, 위아래로 구간이 똑같은 줄은 한 사각형으로 합친다
     (구멍·획 사이 틈이 정확하고 삼각형 수가 적다). 감는 방향은 원본과 같은 시계 방향(화면 기준 왼위→오위→오아래).
+    mask(참/거짓 배열)를 주면 글꼴 대신 그 모양을 쓴다(GPT 가 그린 글자, 높이 px 로 맞춤).
     반환: 삼각형 목록 [(x,y)*3] (글자 칸 기준 픽셀 좌표, y 아래로 증가), 잉크 크기(h, w)."""
     from PIL import Image, ImageDraw, ImageFont
     import numpy as np
-    ft = ImageFont.truetype(font, px)
-    im = Image.new('L', (px * 2, px * 2)); ImageDraw.Draw(im).text((px // 2, px // 4), ch, font=ft, fill=255)
-    a = np.asarray(im) >= 128
+    if mask is not None:
+        m = Image.fromarray((np.asarray(mask) * 255).astype(np.uint8))
+        m = m.resize((max(1, round(m.width * px / m.height)), px), Image.LANCZOS)
+        a = np.asarray(m) >= 128
+    else:
+        ft = ImageFont.truetype(font, px)
+        im = Image.new('L', (px * 2, px * 2)); ImageDraw.Draw(im).text((px // 2, px // 4), ch, font=ft, fill=255)
+        a = np.asarray(im) >= 128
     ys, xs = np.where(a); a = a[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
     def runs(row):

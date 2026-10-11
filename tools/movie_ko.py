@@ -164,6 +164,12 @@ def build(out=os.path.join(OUT, 'opening.thp')):
     import json
     t = thp.Thp(SRC)
     C = [dict(np.load(os.path.join(OUT, 'card%02d.npz' % (k + 1)))) for k in range(12)]
+    for k, c in enumerate(C):                                          # GPT 가 다시 그린 카드(tools/gpt_import.py V번호)가 있으면 그 장면을 씀
+        gp = os.path.join(OUT, 'gpt', 'card%02d.png' % (k + 1))
+        if os.path.exists(gp):
+            c['K'] = np.asarray(Image.open(gp).convert('RGB').resize(c['K'].shape[1::-1], Image.LANCZOS)).astype(float)
+            c['area'] = ndimage.binary_dilation(c['area'], iterations=6)  # GPT 글자가 조금 커도 덮이게
+            print('GPT 카드', k + 1)
     Ws = [active_weights(k) for k in range(12)]
     frames = sorted(set(i for W in Ws for i in W))
     rep = {}; qs = []; log = []
