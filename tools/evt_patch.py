@@ -13,8 +13,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import evt
 
 
-def pad_tail(b, n, fill):
-    """마지막 글자 바로 뒤(끝에 붙은 제어 코드들 앞)에 fill 바이트를 n 개 넣는다.
+def pad_tail(b, n, fill, unit=None):
+    """마지막 글자 바로 뒤(끝에 붙은 제어 코드들 앞)에 fill 바이트(또는 unit 바이트열)를 n 개 넣는다.
     제어 코드 인자(예: 05 01)를 페이지 넘김으로 오인하지 않도록 텍스트 문법대로 토큰을 나눈다."""
     k = 0; p = 0
     while p < len(b):
@@ -25,7 +25,7 @@ def pad_tail(b, n, fill):
         p += 1 if (c == 0x0A or c <= 0x7A or 0xA6 <= c <= 0xDD) else 2
         if c != 0x0A:
             k = p  # 마지막 글자 끝
-    return b[:k] + bytes([fill]) * n + b[k:]
+    return b[:k] + (unit if unit is not None else bytes([fill])) * n + b[k:]
 
 
 def patch(d, inline=None, ptr=None, share=True, fill=None):
@@ -46,8 +46,11 @@ def patch(d, inline=None, ptr=None, share=True, fill=None):
         assert op in (0x66, 0x7E, 0x88), hex(p)
         end = evt.text(d, p + 1)
         room = end - p - 2 - len(new)  # 명령 1 + 텍스트 + 00 1
-        if 1 <= room <= 4 and fill is not None:  # 1~4바이트 남으면 마지막 줄 끝(맨 끝 제어 코드 앞)에 공백을 채운다
-            new = pad_tail(new, room, fill); room = 0
+        # 1~4바이트 남으면 제자리에 넣으려고 마지막 글자 뒤(맨 끝 제어 코드 앞)를 채운다. 공백(0x28)으로 채우면 게임이
+        # 마지막 줄 폭에 공백까지 세어 가운데 정렬이 공백 수의 절반만큼 왼쪽으로 밀림(10/12 사용자 제보) →
+        # 폭이 0인 색 코드 `05 01`(기본색)로 채운다. 홀수는 채울 수 없으니 파일 끝으로 옮긴다.
+        if room in (2, 4) and fill is not None:
+            new = pad_tail(new, room // 2, None, b'\x05\x01'); room = 0
         if room == 0 or room >= 5:     # 제자리: 딱 맞거나, 남는 자리를 02 <원래 끝> 으로 건너뜀
             d[p + 1:p + 2 + len(new)] = new + b'\0'
             if room:

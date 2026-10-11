@@ -77,15 +77,24 @@ def slot_sjis(b):
     return e[0] << 8 | e[1]
 
 
-def encode(s, onebyte=None):
-    """'{05}{04}안녕\\n' 꼴 문자열 → 게임 바이트(끝의 0x00 제외). onebyte: {음절: 바이트}(evt 대사 전용)"""
+def encode(s, onebyte=None, force2=0):
+    """'{05}{04}안녕\\n' 꼴 문자열 → 게임 바이트(끝의 0x00 제외). onebyte: {음절: 바이트}(evt 대사 전용)
+    force2: 1바이트 음절 중 뒤에서부터 이만큼을 2바이트 코드로 쓴다(같은 글자 모양·같은 폭, 바이트만 1씩 늘어남).
+    제자리에 넣을 때 남는 1~4바이트를 공백 대신 이걸로 채운다(공백은 줄 폭에 세져 가운데 정렬이 밀림, 10/12)."""
     out = bytearray()
-    for tok in re.findall(r'\{[0-9A-Fa-f]{2}\}|\n|.', s, re.S):
+    toks = re.findall(r'\{[0-9A-Fa-f]{2}\}|\n|.', s, re.S)
+    two = set()
+    if force2:
+        idx = [i for i, t in enumerate(toks) if onebyte and t in onebyte and t.strip()]
+        if len(idx) < force2:
+            raise ValueError('1바이트 음절이 %d개보다 적음' % force2)
+        two = set(idx[-force2:])
+    for i, tok in enumerate(toks):
         if tok == '\n':
             out.append(0x0A)
         elif len(tok) == 4 and tok[0] == '{':
             out.append(int(tok[1:3], 16))
-        elif onebyte and tok in onebyte:
+        elif onebyte and tok in onebyte and i not in two:
             out.append(onebyte[tok])
         else:
             c = char_code(tok)

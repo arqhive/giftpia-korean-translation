@@ -75,7 +75,7 @@ def build_evt(W, ONE):
     for e in items[:50] + items[-50:]:                           # 짝 검증: 다시 매긴 id 의 원문 표기가 번역 파일과 같아야
         pass
     src = os.path.join(EXT, 'dat', 'evt'); out = os.path.join(W, 'dat', 'evt'); os.makedirs(out, exist_ok=True)
-    tot0 = tot1 = 0; miss = []; short = []
+    tot0 = tot1 = 0; miss = []; short = []; nforce = [0]
     for fn in sorted(os.listdir(src)):
         d = open(os.path.join(src, fn), 'rb').read(); inline = {}; ptr = {}
         for kind, p, o, v, live in evt.texts(d):
@@ -91,13 +91,19 @@ def build_evt(W, ONE):
             if kind == 'inline':
                 if v - p < 5 and v - p - 2 - len(new) < 0:
                     short.append((fn, i, v - p, len(new))); continue
+                room = v - p - 2 - len(new)
+                if 1 <= room <= 4:                                   # 제자리에 딱 맞게: 1바이트 음절을 남는 만큼 2바이트로(공백 채우기 대신)
+                    try:
+                        new = kochar.encode(k, ONE, force2=room); nforce[0] += 1
+                    except ValueError:
+                        pass                                         # 1바이트 음절이 모자라면 evt_patch 가 05 01 로 채우거나 끝으로 옮김
                 inline[p] = new
             else:
                 ptr[o] = new
         nd = evt_patch.patch(d, inline, ptr, fill=kochar.SPACE)
         open(os.path.join(out, fn), 'wb').write(nd)
         tot0 += len(d); tot1 += len(nd)
-    log('evt %d개: %d → %d 바이트(+%d%%), 원문 짝 못 찾음 %d, 짧아서 못 넣음 %d' % (len(os.listdir(src)), tot0, tot1, 100 * (tot1 - tot0) // tot0, len(miss), len(short)))
+    log('evt %d개: %d → %d 바이트(+%d%%), 원문 짝 못 찾음 %d, 짧아서 못 넣음 %d, 제자리 맞춤(1바이트→2바이트) %d' % (len(os.listdir(src)), tot0, tot1, 100 * (tot1 - tot0) // tot0, len(miss), len(short), nforce[0]))
     return miss, short
 
 
