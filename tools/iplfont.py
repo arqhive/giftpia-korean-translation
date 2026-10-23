@@ -23,7 +23,7 @@ def tables(dol_path=None):
     if _tables is None:
         from dol import Dol
         D = Dol(dol_path or os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'extract', 'main.dol'))
-        han = struct.unpack('>192H', D.read(0x801AD6B8, 192 * 2))          # 0x20~0xDF
+        han = struct.unpack('>192H', D.read(0x801AD6F8, 192 * 2))          # 0x20~0xDF (0x80117718: 표 0x801AD6F8 + 2*(c-0x20))
         zen = struct.unpack('>%dH' % (6 * 188), D.read(0x801AD878, 6 * 188 * 2))  # 0x81~0x86 행
         _tables = (han, zen)
     return _tables
