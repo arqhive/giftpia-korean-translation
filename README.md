@@ -2,7 +2,7 @@
 
 *ギフトピア* (게임큐브, 일본판 `GGFJ01`) 비공식 한국어 팬 패치입니다.
 
-**제작: arqhive** · **최신 버전: [v0.3.1](../../releases/tag/v0.3.1)**
+**제작: arqhive** · **최신 버전: [v0.4](../../releases/tag/v0.4)**
 
 - 대사 15,197줄과 메뉴·스테이터스·도움말·소원 목록 등 실행 파일 문구 1,127개를 한글화했습니다.
 - 그림 글씨 118장(디스크 안 376곳), 디스크 배너, 3D 글자 모델 2개, 오프닝 영상 자막 12장을 한글화했습니다.
@@ -30,7 +30,7 @@
 
 ### 적용 방법
 
-1. [배포 페이지](../../releases/tag/v0.3.1)에서 `GGFJ_KPatch_v0.3.1.zip`을 받아 풉니다.
+1. [배포 페이지](../../releases/tag/v0.4)에서 `GGFJ_KPatch_v0.4.zip`을 받아 풉니다.
 2. 풀린 폴더에 원본 이미지를 넣고 `패치하기.bat`을 더블클릭합니다. 원본 파일을 `패치하기.bat` 위에 끌어다 놓아도 됩니다.
 3. 원본과 같은 폴더에 `Giftpia (Korean).iso`가 생깁니다. 원본 파일은 그대로 남습니다.
 
@@ -78,7 +78,7 @@ python tools/dol_missing.py && python tools/dol_missing_final.py   # 1차에서 
 python tools/model_ko.py && python tools/movie_ko.py build         # 3D 글자 모델·오프닝 영상 자막
 python tools/build.py build/Giftpia_KO.iso v0.1          # 대사·폰트·실행 파일·그림 → ISO
 python tools/make_patcher.py --orig "Giftpia (Japan).iso" --build build/Giftpia_KO.iso \
-    --out release/GGFJ_KPatch_v0.3.1 --version 0.3.1 --bin tools/bin --readme patcher/README.txt
+    --out release/GGFJ_KPatch_v0.4 --version 0.4 --bin tools/bin --readme patcher/README.txt
 ```
 
 - 대사는 맵마다 하나인 `evt/*.evt` 바이트코드 안에 들어 있습니다. 파일 전체를 재배치하는 대신, 원래 대사 자리를 「파일 끝의 한글 대사로 건너뛰는 명령」으로 바꾸는 우회 방식으로 넣습니다(`tools/evt_patch.py`).
