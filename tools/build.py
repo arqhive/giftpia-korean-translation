@@ -87,7 +87,8 @@ def build_evt(W, ONE):
             k = ko.get(i, '')
             if not k:
                 continue
-            new = kochar.encode(k, ONE)
+            # 6D(printf 서식 문구, ATM·기록 표시 등)는 1바이트를 ASCII 로 그린다 → 원본처럼 2바이트만 쓴다(10/23 ATM 깨짐)
+            new = kochar.encode(k, None if op == 0x6D else ONE)
             if kind == 'inline':
                 if v - p < 5 and v - p - 2 - len(new) < 0:
                     short.append((fn, i, v - p, len(new))); continue
@@ -167,6 +168,13 @@ def build_fonts(W, ONE):
             px = [[0] * h['cellW'] for _ in range(h['cellH'])]
         iplfont.set_cell(h, d, idx, px)
         d[h['widthTable'] + idx] = h['cellW']
+    # 안 다시 그린 원래 칸(괘선 기호 등)도 맨 윗줄·맨 아랫줄을 비운다. 숫자 위 칸(519~523, ─│ 등)이 끝 줄까지 차 있어
+    # 6D 화면(ATM 등)의 숫자 머리 위에 선으로 묻어났음(10/23 사용자 제보)
+    for idx in range(iplfont.index(h['lastChar']) + 1):
+        px = iplfont.cell_image(h, d, idx)
+        if any(px[0]) or any(px[-1]):
+            px[0] = [0] * h['cellW']; px[-1] = [0] * h['cellW']
+            iplfont.set_cell(h, d, idx, px)
     comp = yay0.compress(bytes(d)); comp += bytes((-len(comp)) % 32)
     assert len(comp) <= 0x4D000, 'ROM 폰트 버퍼(0x4D000)보다 큼: %d' % len(comp)
     open(os.path.join(W, 'kofont.szs'), 'wb').write(comp)
