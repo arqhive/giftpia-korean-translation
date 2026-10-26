@@ -224,6 +224,21 @@ def build_dol(W):
             while len(blob) % 4:
                 blob.append(0)
             moved[a] = SEC_ADDR + len(blob); blob += enc
+    # 메뉴·상태창 글자 테두리(0x80065200 방식 1): 원래는 오프셋 표 0x80194D38 의 상하좌우 4방향(±32 = ±2px)만 겹쳐 그려
+    # 한글 획 사이가 메워지고 대각선 쪽이 계단져 보였음(10/27). 같은 2px 거리로 대각선 4방향을 더한 8방향 표를 새 섹션에 두고
+    # 반복 횟수(한 번에 2방향) 2→4, 표 주소 lis/addi 를 바꾼다. 대사창은 다른 렌더러라 영향 없음.
+    while len(blob) % 4:
+        blob.append(0)
+    outline_tab = SEC_ADDR + len(blob)
+    blob += struct.pack('>16h', -32, 0, 32, 0, 0, -32, 0, 32, -23, -23, 23, -23, -23, 23, 23, 23)
+    # GXBegin(GX_QUADS, 0, 정점 수)도 16→32(사각형 4→8개). 처음엔 이걸 빠뜨려 GPU 명령이 어긋남(돌핀 「알 수 없는 옵코드」, 10/27)
+    for at, old, new in ((0x8006538C, 0x38A00010, 0x38A00020),
+                         (0x80065398, 0x38000002, 0x38000004),
+                         (0x8006539C, 0x3C608019, lis_addi(outline_tab)[0]),
+                         (0x800653AC, 0x38634D38, lis_addi(outline_tab)[1])):
+        o = D.a2o(at)
+        assert struct.unpack('>I', d[o:o + 4])[0] == old, hex(at)
+        struct.pack_into('>I', d, o, new)
     while len(blob) % 32:
         blob.append(0)
     # 포인터 고치기: 데이터 섹션 안 u32 가 옛 주소인 곳
