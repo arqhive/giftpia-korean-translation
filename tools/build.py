@@ -138,6 +138,7 @@ def draw_hinted(ch, cell, size, levels, cx=None, cy=None):
     im = Image.new('L', (cell, cell), 0); d = ImageDraw.Draw(im); d.fontmode = 'L'
     d.text((cell / 2 if cx is None else cx, cell / 2 if cy is None else cy), ch, fill=255, font=f, anchor='mm')
     k = levels - 1
+    # 10/27 획을 가늘게·가장자리 1단계 점 없애기(0·2·3)를 시험했으나 실기 상태창에서 더 지저분해져 되돌림(사용자 확인)
     return [[min(k, int(((im.getpixel((x, y)) / 255) ** 0.8) * k + 0.5)) for x in range(cell)] for y in range(cell)]
 
 
