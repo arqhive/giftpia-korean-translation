@@ -293,6 +293,13 @@ def build_gfx(W):
             enc_cache[key] = texenc.encode(img, fmt)
         b = enc_cache[key]; assert len(b) == texenc.tsize(w, h, fmt)
         f[off:off + len(b)] = b
+    # 복권 간판: 글자 모양 3D 판(「宝くじ」)을 그림 569 의 「복권」 모양으로(텍스처만 바꾸면 宝くじ 모양에 잘림, 10/28)
+    LOT = 'map/convini/lottery_txt.dat'
+    if LOT in files and '569' in {c['n'] for c in conf.values()}:
+        import lottery_ko
+        c569 = next(c for c in conf.values() if c['n'] == '569')
+        files[LOT], nr, nv = lottery_ko.patch(bytes(files[LOT]), lottery_ko.mask_from_png(os.path.join(ROOT, c569['final'])))
+        log('복권 간판 메시: 직사각형 %d개, 꼭짓점 %d개' % (nr, nv))
     for rel, f in files.items():
         p = os.path.join(W, 'dat', rel); os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'wb').write(f)
     for name in ('haraheri_endtxt.dat', 'dmy_endtxt.dat'):
