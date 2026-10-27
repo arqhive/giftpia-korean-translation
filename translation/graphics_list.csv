@@ -260,3 +260,4 @@ X5,-,영상 크레딧,스태프롤,thp/staff_names1.jpg,,,,mov/staff.thp,1,,,제
 X6,-,영상 크레딧,엔딩 크레딧,thp/ending_names1.jpg,,,,mov/ending.thp,1,,,제외,
 589,B,마스코트 표식,"ナ (편의점 마스코트 몸통 초록 가타카나, 10/11 재조사)",tex/map/convini/stand.dat/012_1708_256x64_f5.png,256,64,5,map/convini/stand.dat,1,,0,확정,work/gfx/final/589.png
 2276,B,소품,"防 (방재 두건 빨간 원 마크, 10/11 재조사)",tex/map/worldmap/zukinG.dat/000_1e8_32x32_f14.png,32,32,14,map/worldmap/zukinG.dat,1,,0,확정,work/gfx/final/2276.png
+1964,B,묘비,マドロス,tex/map/worldmap/kichen_haka.dat/000_cdc_32x64_f14.png,32,64,14,map/worldmap/kichen_haka.dat,2,,1,확정,work/gfx/final/1964.png
