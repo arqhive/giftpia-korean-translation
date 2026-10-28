@@ -282,6 +282,8 @@ def build_gfx(W):
         src = r['src']; rel = 'preload.cmb' if src.startswith('preload/') else src
         if rel not in files:
             cur = os.path.join(W, 'dat', rel)
+            if rel == 'map/convini/lottery_txt.dat':               # 메시를 덧붙이는 파일이라 같은 폴더로 다시 빌드할 때 두 번 붙지 않게 늘 원본에서
+                cur = ''
             files[rel] = bytearray(open(cur if os.path.exists(cur) else os.path.join(EXT, 'dat', rel), 'rb').read())
         f = files[rel]
         off, w, h, fmt = texenc.locate(bytes(f), src, r['label'])
