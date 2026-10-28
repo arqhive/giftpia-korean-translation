@@ -27,6 +27,8 @@ translation/pilot_*.json
 translation/batches/
 translation/*_before_review.json
 translation/dol_ko2_review.md
+translation/evt_extra_jp.json
+translation/evt_extra_review.md
 # work/ 는 게임에서 뽑은 그림·영상·모델과 작업용 스크립트라 통째로 빼고, 그림 위치 목록만 넣는다
 work/*
 !work/gfx_survey/

@@ -75,7 +75,11 @@ def build_evt(W, ONE):
     for e in items[:50] + items[-50:]:                           # 짝 검증: 다시 매긴 id 의 원문 표기가 번역 파일과 같아야
         pass
     src = os.path.join(EXT, 'dat', 'evt'); out = os.path.join(W, 'dat', 'evt'); os.makedirs(out, exist_ok=True)
-    tot0 = tot1 = 0; miss = []; short = []; nforce = [0]
+    tot0 = tot1 = 0; miss = []; short = []; nforce = [0]; nextra = [0]
+    extras = {}
+    for x in json.load(open(os.path.join(TR, 'evt_extra.json'), encoding='utf-8')):
+        if x['ko']:
+            extras.setdefault(x['file'], []).append(x)
     for fn in sorted(os.listdir(src)):
         d = open(os.path.join(src, fn), 'rb').read(); inline = {}; ptr = {}
         for kind, p, o, v, live in evt.texts(d):
@@ -101,10 +105,18 @@ def build_evt(W, ONE):
                 inline[p] = new
             else:
                 ptr[o] = new
+        for x in extras.get(fn, []):                                 # 대사 추적이 못 닿는 문자열(쥬크박스 표·스태프롤 등, translation/evt_extra.json, 10/28)
+            pos = int(x['pos'], 16)
+            if x['kind'] == 'ptr':
+                ptr[pos] = kochar.encode(x['ko'], None)                  # 목록 화면 문자열: 원본처럼 2바이트만
+            else:
+                assert d[pos] == int(x['op'], 16) and pos not in inline, (fn, x['id'])
+                inline[pos] = kochar.encode(x['ko'], ONE)
+            nextra[0] += 1
         nd = evt_patch.patch(d, inline, ptr, fill=kochar.SPACE)
         open(os.path.join(out, fn), 'wb').write(nd)
         tot0 += len(d); tot1 += len(nd)
-    log('evt %d개: %d → %d 바이트(+%d%%), 원문 짝 못 찾음 %d, 짧아서 못 넣음 %d, 제자리 맞춤(1바이트→2바이트) %d' % (len(os.listdir(src)), tot0, tot1, 100 * (tot1 - tot0) // tot0, len(miss), len(short), nforce[0]))
+    log('evt %d개: %d → %d 바이트(+%d%%), 원문 짝 못 찾음 %d, 짧아서 못 넣음 %d, 제자리 맞춤(1바이트→2바이트) %d, 추가 문자열 %d' % (len(os.listdir(src)), tot0, tot1, 100 * (tot1 - tot0) // tot0, len(miss), len(short), nforce[0], nextra[0]))
     return miss, short
 
 
@@ -113,7 +125,7 @@ def used_codes(ONE):
     out = {}
     ko = json.load(open(os.path.join(TR, 'evt_ko.json'), encoding='utf-8'))
     L, dk = dol_tr.load()
-    texts = list(ko.values()) + list(dk.values())
+    texts = list(ko.values()) + list(dk.values()) + [x['ko'] for x in json.load(open(os.path.join(TR, 'evt_extra.json'), encoding='utf-8'))]
     for t in texts:
         for tok in re.findall(r'\{[0-9A-Fa-f]{2}\}|\n|.', CTL.sub('', t), re.S):
             if tok == '\n' or (tok in ONE):
