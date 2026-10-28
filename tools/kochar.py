@@ -8,6 +8,8 @@ import re
 import unicodedata
 
 HANGUL = [bytes([hi, lo]).decode('euc-kr') for hi in range(0xB0, 0xC9) for lo in range(0xA1, 0xFF)]
+EXTRA = '슌'   # KS X 1001 에 없는 음절: 2,350자 다음 한자 칸(0x9540~)에 이어 배정(10/28, 스태프롤 「요시다 슌스케」)
+HANGUL += list(EXTRA)
 
 
 def _kanji_codes():
