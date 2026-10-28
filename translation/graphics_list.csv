@@ -261,3 +261,5 @@ X6,-,영상 크레딧,엔딩 크레딧,thp/ending_names1.jpg,,,,mov/ending.thp,1
 589,B,마스코트 표식,"ナ (편의점 마스코트 몸통 초록 가타카나, 10/11 재조사)",tex/map/convini/stand.dat/012_1708_256x64_f5.png,256,64,5,map/convini/stand.dat,1,,0,확정,work/gfx/final/589.png
 2276,B,소품,"防 (방재 두건 빨간 원 마크, 10/11 재조사)",tex/map/worldmap/zukinG.dat/000_1e8_32x32_f14.png,32,32,14,map/worldmap/zukinG.dat,1,,0,확정,work/gfx/final/2276.png
 1964,B,묘비,マドロス,tex/map/worldmap/kichen_haka.dat/000_cdc_32x64_f14.png,32,64,14,map/worldmap/kichen_haka.dat,2,,1,확정,work/gfx/final/1964.png
+2601,A,힌트 글,右あけ 左あけ 右とじ 右あけ / 左とじ 右とじ 右あけ,tex/map/met/wall.dat/029_281c_128x32_f6.png,128,32,6,map/met/wall.dat,1,,0,제외,
+2602,A,힌트 글,朝10時にさがせ / ラカタ,tex/map/yamagoya/wall.dat/008_20c8_128x64_f5.png,128,64,5,map/yamagoya/wall.dat,2,,0,제외,
