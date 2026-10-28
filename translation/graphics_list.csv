@@ -1,7 +1,7 @@
 ﻿n,grade,category,text,png,w,h,fmt,first_src,n_src,other_src,in_preload,status,final
 57,C,장식,E=MC² (수식),tex/chr/ejinso.dat/020_52e00_32x64_f14.png,32,64,14,chr/ejinso.dat,4,chr/ejinso0.dat;chr/ejinso10.dat;chr/ejinso18.dat,0,제외,
 76,B,간판/소품,鮭 (별 마크 아래 세로 글자),tex/chr/fisherk.dat/028_752e8_48x96_f14.png,48,96,14,chr/fisherk.dat,1,,0,확정,work/gfx/final/76.png
-111,C,로고,张 (중국 한자 장식),tex/chr/komatta.dat/007_3c940_64x64_f14.png,64,64,14,chr/komatta.dat,3,chr/komatta10.dat;chr/komatta18.dat,0,제외,
+111,C,로고,张,tex/chr/komatta.dat/007_3c940_64x64_f14.png,64,64,14,chr/komatta.dat,3,chr/komatta10.dat;chr/komatta18.dat,0,확정,work/gfx/final/111.png
 156,B,문장,村 (원형 문장),tex/chr/mayer.dat/069_a9040_64x64_f14.png,64,64,14,chr/mayer.dat,10,chr/mayer0.dat;chr/mayer10.dat;chr/mayer18.dat;chr/mayer2.dat;chr/mayer3.dat;chr/mayer4.dat;chr/mayer5.dat;chr/mayer6.dat;chr/mayer8.dat,0,확정,work/gfx/final/156.png
 163,C,로고,EE (에진소 전기 로고),tex/chr/mc_tenjin.dat/000_3efa8_32x32_f5.png,32,32,5,chr/mc_tenjin.dat,1,,0,제외,
 173,C,로고,EJINSO / EE / ELECTRIC,tex/chr/mc_tenjin.dat/064_417a8_64x64_f14.png,64,64,14,chr/mc_tenjin.dat,1,,0,제외,
@@ -202,7 +202,7 @@
 2113,D,기호,〒 (우체통),tex/map/worldmap/pokkle_post.dat/000_128_32x32_f14.png,32,32,14,map/worldmap/pokkle_post.dat,2,,1,제외,
 2115,C,간판,GUARD,tex/map/worldmap/policebox.dat/000_ebc_64x128_f14.png,64,128,14,map/worldmap/policebox.dat,2,,1,제외,
 2138,A,간판,巡回中,tex/map/worldmap/rusukanban.dat/000_c28_64x32_f14.png,64,32,14,map/worldmap/rusukanban.dat,2,,1,확정,work/gfx/final/2138.png
-2146,C,장식,张 (배 장식),tex/map/worldmap/ship.dat/012_7160_64x64_f14.png,64,64,14,map/worldmap/ship.dat,2,,1,제외,
+2146,C,장식,张,tex/map/worldmap/ship.dat/012_7160_64x64_f14.png,64,64,14,map/worldmap/ship.dat,2,,1,확정,work/gfx/final/2146.png
 2154,A,이정표,ナナシ観光,tex/map/worldmap/signpost_an.dat/000_448_64x32_f14.png,64,32,14,map/worldmap/signpost_an.dat,2,,1,확정,work/gfx/final/2154.png
 2155,A,이정표,シマウラ入口,tex/map/worldmap/simasign.dat/000_c0_64x32_f14.png,64,32,14,map/worldmap/simasign.dat,2,,1,확정,work/gfx/final/2155.png
 2165,A,문패,タオ,tex/map/worldmap/tao_home.dat/010_32f0_64x32_f14.png,64,32,14,map/worldmap/tao_home.dat,2,,1,확정,work/gfx/final/2165.png
