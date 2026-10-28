@@ -163,7 +163,7 @@ def build_fonts(W, ONE):
     one = {kochar.slot_sjis(b): (' ' if ch in (' ', '　') else ch) for ch, b in ONE.items()}
     glyphs.update(one)
     nfb = 0
-    skipped = []
+    skipped = []; kept = []
     for code, ch in glyphs.items():
         try:
             idx = iplfont.index(code)
@@ -171,6 +171,8 @@ def build_fonts(W, ONE):
             idx = 0
         if not idx:                                               # ROM 폰트에 칸이 없는 코드(예: ①=0x8740, 원문도 같은 글자) → 원본과 같은 동작
             skipped.append(ch); continue
+        if ch.strip() and not has_glyph(FONT, ch) and not has_glyph(FALLBACK, ch):
+            kept.append(ch); continue                            # 두 글꼴 다 없는 기호(ー·〇)는 원래 칸 그대로(새로 그리면 빈 글자 상자 ☒, 10/29 사용자 제보)
         if ch.strip():
             nfb += not has_glyph(FONT, ch)
             # 중심을 1px 올려(cy=11) 잉크를 1~22번째 줄 안에 둔다. 판에서 칸이 위아래로 붙어 있어 맨 끝 줄에 잉크가 있으면
@@ -207,8 +209,8 @@ def build_fonts(W, ONE):
         tpl.replace_i4(tp, i, im)
     os.makedirs(os.path.join(W, 'dat', 'ext'), exist_ok=True)
     open(os.path.join(W, 'dat', 'ext', 'font.tpl'), 'wb').write(tp)
-    log('폰트: ROM 폰트 %d자(대체 글꼴로 그린 기호 %d, 칸 없는 코드 건너뜀 %s) %d 바이트, font.tpl 1바이트 칸 %d'
-        % (len(glyphs) - len(skipped), nfb, ''.join(skipped), len(comp), len(one)))
+    log('폰트: ROM 폰트 %d자(대체 글꼴로 그린 기호 %d, 원래 칸 그대로 %s, 칸 없는 코드 건너뜀 %s) %d 바이트, font.tpl 1바이트 칸 %d'
+        % (len(glyphs) - len(skipped) - len(kept), nfb, ''.join(kept), ''.join(skipped), len(comp), len(one)))
 
 
 SEC_ADDR = 0x80508960          # 새 데이터 섹션: 디버거 스택 끝(0x80508958) 바로 뒤 = 원래 아레나 시작
